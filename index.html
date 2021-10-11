@@ -1,13 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>Food Connect Platform</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <title>Food Konnect Platform</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="headerLeft">
+        <h1>LOGO</h1>
+      </div>
+      <div class="headerRight">
+        <nav>
+          <ul>
+            <li><a href="#">Food Ordering</a></li>
+            <li><a href="#">Restaurant Services</a></li>
+            <li><a href="#">Pricing</a></li>
+            <button class="headerButton">LOGIN / SIGN UP</button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+
+        <div class="heroDetails">
+          <h1>Free Online Ordering System For Restaurants</h1>
+          <p>Get that nutritious meal today</p>
+          <button class="heroButton">
+            Get Started
+          </button>
+        </div>
+
+        <div class="search">
+          <div class="searchContainer">
+            <input type="text" name="" value="" placeholder="Search for the nearest restaurant">
+            <button class="searchButton">
+              Search
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="foodItems">
+        <div class="container">
+
+          <div class="foodItem">
+            <img src="./assets/images/combo.jpg" alt="">
+            <h4>COMBO</h4>
+          </div>
+
+          <div class="foodItem">
+            <img src="./assets/images/fries.png" alt="">
+            <h4>KIDS MENU</h4>
+          </div>
+
+          <div class="foodItem">
+            <img src="./assets/images/pizza.jpg" alt="">
+            <h4>PIZZA</h4>
+          </div>
+
+          <div class="foodItem">
+            <img src="./assets/images/chicken.jpg" alt="">
+            <h4>CHICKEN</h4>
+          </div>
+
+          <div class="foodItem">
+            <img src="./assets/images/coffee.jpg" alt="">
+            <h4>DRINKS</h4>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="map">
+        <div class="cardItems">
+
+          <div class="cardItem white">
+            <div class="cardItemLeft">
+              <h3>Any day offer</h3>
+              <p>Finger licking Burger</p>
+              <p id="price">₦100.00</p>
+            </div>
+            <div class="cardItemRight">
+              <div class="circle orange">
+                <img src="./assets/images/fries.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="cardItem black">
+            <div class="cardItemLeft">
+              <h3>Just for you</h3>
+              <p>Salad recipe for you</p>
+              <p id="price">₦250.00</p>
+            </div>
+            <div class="cardItemRight">
+              <div class="circle white">
+                <img src="./assets/images/fries.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="cardItem white">
+            <div class="cardItemLeft">
+              <h3>Available 24/7</h3>
+              <p>Here to solve your needs</p>
+              <p id="price">Contact Us</p>
+            </div>
+            <div class="cardItemRight">
+              <div class="circle orange">
+                <img src="./assets/images/fries.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section id="popular">
+        <div class="container">
+          <h3>Popular Dishes</h3>
+
+          <div class="categoryLists">
+            <div class="categoryList active">
+              ALL
+            </div>
+            <div class="categoryList">
+              BURGER
+            </div>
+            <div class="categoryList">
+              AFRICAN RECIPES
+            </div>
+            <div class="categoryList">
+              PIZZA
+            </div>
+          </div>
+
+<div class="categoryListsDetailsContainer">
+  <div class="categoryListsDetails">
+    <div class="categoryListDetail">
+      <img src="./assets/images/hamburger.jpg" alt="">
+      <h4>Smoothies</h4>
+      <p>Special delicacy just for you to enjoy</p>
+      <div class="priceCart">
+        <p>₦250.00</p>
+        <div class="cart">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="categoryListsDetails">
+    <div class="categoryListDetail">
+      <img src="./assets/images/hamburger.jpg" alt="">
+      <h4>Smoothies</h4>
+      <p>Special delicacy just for you to enjoy</p>
+      <div class="priceCart">
+        <p>₦250.00</p>
+        <div class="cart">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="categoryListsDetails">
+    <div class="categoryListDetail">
+      <img src="./assets/images/hamburger.jpg" alt="">
+      <h4>Smoothies</h4>
+      <p>Special delicacy just for you to enjoy</p>
+      <div class="priceCart">
+        <p>₦250.00</p>
+        <div class="cart">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </section>
+    </main>
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
