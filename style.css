@@ -69,7 +69,7 @@ line-height: 27px;
 
 #hero {
   position: relative;
-  background: url("./images/rice.jpg") no-repeat center center/cover;
+  background: url("./assets/images/rice.jpg") no-repeat center center/cover;
   width: 100vw;
   height: 100vh;
   z-index: 100;
