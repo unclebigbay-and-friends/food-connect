@@ -1,13 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>Food Connect Platform</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <title>Food Konnect Platform</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="headerLeft">
+        <h1>LOGO</h1>
+      </div>
+      <div class="headerRight">
+        <nav>
+          <ul>
+            <li><a href="#">Food Ordering</a></li>
+            <li><a href="#">Restaurant Services</a></li>
+            <li><a href="#">Pricing</a></li>
+            <button class="headerButton">LOGIN / SIGN UP</button>
+          </ul>
+        </nav>
+      </div>
+      <div class="burger-menu">
+        <div class="burger-menu-toggle">
+          <span><i class="fas fa-bars open"></i></span>
+          <span><i class="fas fa-times close"></i></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="heroDetails">
+          <h1>Free Online Ordering System For Restaurants</h1>
+          <p>Get that nutritious meal today</p>
+          <button class="heroButton">
+            Get Started
+          </button>
+        </div>
+
+        <div class="search">
+          <div class="searchContainer">
+            <input
+              type="text"
+              name=""
+              value=""
+              placeholder="Search for the nearest restaurant"
+            />
+            <button class="searchButton">
+              Search
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="foodItems">
+        <div class="container">
+          <div class="foodItem">
+            <img src="./assets/images/combo.jpg" alt="" />
+            <h4>COMBO</h4>
+          </div>
+
+          <div class="foodItem">
+            <img src="./assets/images/fries.png" alt="" />
+            <h4>KIDS MENU</h4>
+          </div>
+
+          <div class="foodItem">
+            <img src="./assets/images/pizza.jpg" alt="" />
+            <h4>PIZZA</h4>
+          </div>
+
+          <div class="foodItem">
+            <img src="./assets/images/chicken.jpg" alt="" />
+            <h4>CHICKEN</h4>
+          </div>
+
+          <div class="foodItem">
+            <img src="./assets/images/coffee.jpg" alt="" />
+            <h4>DRINKS</h4>
+          </div>
+        </div>
+      </section>
+
+      <section id="map">
+        <div class="cardItems">
+          <div class="cardItem white">
+            <div class="cardItemLeft">
+              <h3>Any day offer</h3>
+              <p>Finger licking Burger</p>
+              <p id="price">₦100.00</p>
+            </div>
+            <div class="cardItemRight">
+              <div class="circle orange">
+                <img src="./assets/images/fries.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="cardItem black">
+            <div class="cardItemLeft">
+              <h3>Just for you</h3>
+              <p>Salad recipe for you</p>
+              <p id="price">₦250.00</p>
+            </div>
+            <div class="cardItemRight">
+              <div class="circle white">
+                <img src="./assets/images/fries.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="cardItem white">
+            <div class="cardItemLeft">
+              <h3>Available 24/7</h3>
+              <p>Here to solve your needs</p>
+              <p id="price">Contact Us</p>
+            </div>
+            <div class="cardItemRight">
+              <div class="circle orange">
+                <img src="./assets/images/fries.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="popular">
+        <div class="container">
+          <h3>Popular Dishes</h3>
+
+          <div class="categoryLists">
+            <div class="categoryList active">
+              ALL
+            </div>
+            <div class="categoryList">
+              BURGER
+            </div>
+            <div class="categoryList">
+              AFRICAN RECIPES
+            </div>
+            <div class="categoryList">
+              PIZZA
+            </div>
+          </div>
+
+          <div class="categoryListsDetailsContainer">
+            <div class="categoryListDetailsGroup">
+              <div class="categoryListsDetails">
+                <div class="categoryListDetail">
+                  <img src="./assets/images/hamburger.jpg" alt="" />
+                  <h4>Smoothies</h4>
+                  <p>Special delicacy just for you to enjoy</p>
+                  <div class="priceCart">
+                    <p>₦250.00</p>
+                    <div class="cart">
+                      <i class="fas fa-shopping-cart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="categoryListsDetails">
+                <div class="categoryListDetail">
+                  <img src="./assets/images/hamburger.jpg" alt="" />
+                  <h4>Smoothies</h4>
+                  <p>Special delicacy just for you to enjoy</p>
+                  <div class="priceCart">
+                    <p>₦250.00</p>
+                    <div class="cart">
+                      <i class="fas fa-shopping-cart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="categoryListsDetails">
+                <div class="categoryListDetail">
+                  <img src="./assets/images/hamburger.jpg" alt="" />
+                  <h4>Smoothies</h4>
+                  <p>Special delicacy just for you to enjoy</p>
+                  <div class="priceCart">
+                    <p>₦250.00</p>
+                    <div class="cart">
+                      <i class="fa fa-shopping-cart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="categoryButtonContainer">
+              <button id="categoryButton">
+                LOAD MORE
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fast">
+        <div class="fastLeft">
+          <div class="fastImage">
+            <img src="./assets/images/hamburger.jpg" alt="" />
+          </div>
+          <div class="fastDetails">
+            <h1>FAST FOOD MEALS</h1>
+            <p>PHENOMENON TASTE</p>
+            <button class="fastButton">
+              ORDER NOW
+            </button>
+          </div>
+        </div>
+        <div class="fastRight">
+          <div class="fastImage">
+            <img src="./assets/images/chicken.jpg" alt="" />
+          </div>
+          <div class="fastDetails">
+            <h1>AFRICAN DISHES</h1>
+            <p>PHENOMENON TASTE</p>
+            <button class="fastButton">
+              ORDER NOW
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="download">
+        <div class="downloadLeft">
+          <h1>LOGO</h1>
+          <h2>Order Food</h2>
+          <p>
+            The FoodKonnect App makes it simple for anybody to use a mobile
+            device to look over the menu of the best vendors and place an order
+            for home delivery.
+          </p>
+
+          <div class="foodOrderDownload">
+            <div class="apple">
+              Download on the App Store
+            </div>
+            <div class="google">
+              Download on the Google Play
+            </div>
+          </div>
+        </div>
+
+        <div class="downloadRight">
+          <img src="./assets/images/fries.png" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footerTop">
+        <h1>LOGO</h1>
+        <div class="footerDurations">
+          <div class="footerDuration">
+            <h3>ADDRESS</h3>
+            <p>KM 43 New Workspace, Bwari, Abuja Nigeria</p>
+          </div>
+          <div class="footerDuration">
+            <h3>OPENING HOURS</h3>
+            <p>
+              Monday – Friday: 8am – 4pm
+            </p>
+            <p>Saturday: 9am – 5pm</p>
+            <p>Sunday: 4pm - 5pm</p>
+          </div>
+          <div class="footerDuration">
+            <h3>BOOK A TABLE</h3>
+            <p>
+              You can reserve a table here to visit any of the registered
+              restaurant <span>+234 0000 000</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footerBottom">
+      <p>Copyright © 2021 FoodKonnect. All Rights Reserved.</p>
+    </div>
     <script src="./main.js"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/dfede42a17.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
