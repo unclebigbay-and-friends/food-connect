@@ -376,27 +376,23 @@ cursor: pointer;
 }
 
 .categoryListsDetailsContainer {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  justify-content: space-evenly;
-  -ms-align-items: center;
-  flex-wrap: wrap;
-  align-items: center;
+
   margin-top: 2rem;
 }
 
 .categoryListsDetails {
-
-  width: 324px;
+width: 324px;
 height: 100%;
 background: #FFFFFF;
 border: 1px solid #C4C4C4;
 border-radius: 20px;
+margin-bottom: 1rem;
+
 }
 
 .categoryListDetail {
 padding:1.5rem;
+
 }
 
 #popular .container .categoryLists .categoryList.active {
@@ -444,7 +440,346 @@ padding:1.5rem;
   justify-content: center;
   -ms-align-items: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.priceCart .cart i {
+  color: white;
+}
+
+.categoryListDetailsGroup {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-evenly;
+  -ms-align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.categoryButtonContainer {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  margin-top: 2rem;
+
+}
+
+#categoryButton {
+  width: 170px;
+height: 52px;
+background: #FF4E17;
+border-radius: 10px;
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+justify-content: center;
+-ms-align-items: center;
+align-items: center;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 108%;
+color: #FFFFFF;
+apperance: none;
+border: none;
+outline: none;
+}
+
+/* FAST --------------------------------------------------------- */
+#fast {
+  background: #333333;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.fastLeft {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-evenly;
+  -ms-align-items: center;
+  align-items: center;
+  flex: 1;
+}
+
+
+.fastLeft h1, .fastRight h1 {
+  font-style: normal;
+font-weight: bold;
+font-size: 40.753px;
+line-height: 61px;
+color: #FFFFFF;
+width: 80%;
+margin-bottom: 1rem;
+}
+
+.fastLeft p, .fastRight p {
+  font-style: normal;
+font-weight: bold;
+font-size: 25.4707px;
+line-height: 38px;
+color: #FFFFFF;
+margin-bottom: 1rem;
+}
+
+.fastButton {
+  width: 180.51px;
+height: 57.07px;
+background: #FF4E17;
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+justify-content: center;
+-ms-align-items: center;
+align-items: center;
+border: none;
+apperance: none;
+outline: none;
+font-style: normal;
+font-weight: bold;
+font-size: 20.3765px;
+line-height: 31px;
+color: #FFFFFF;
+cursor: pointer;
+}
+
+.fastImage {
+  margin-right: 1.5rem;
+}
+
+.fastImage img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.fastRight {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-evenly;
+  -ms-align-items: center;
+  align-items: center;
+  flex: 1
+}
+
+#download {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  color:  #E5E5E5;
+  background-color: #FF4E17;
+}
+
+.downloadLeft {
+  padding: 2rem;
+
+}
+
+.downloadLeft h2 {
+  font-style: normal;
+font-weight: bold;
+font-size: 63.7826px;
+line-height: 96px;
+color: #FFFFFF;
+margin: 1.5rem 0;
+}
+
+.downloadLeft p {
+  font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 33px;
+color: #FFFFFF;
+width: 68%;
+margin-bottom: 1.5rem;
+}
+
+#download img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.foodOrderDownload {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.foodOrderDownload .apple {
+  margin-right: 1rem;
+  border: 2px solid #FFFFFF;
+  text-align: center;
+  padding: 1rem;
+}
+
+.foodOrderDownload .google {
+  border: 2px solid #FFFFFF;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #333333;
+  padding: 0 3rem;
+  height: 437px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer h1 {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+footer h1:before,
+footer h1:after {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+footer h1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+footer h1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.footerDurations {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footerDurations .footerDuration {
+  flex: 1;
+}
+
+.footerDurations .footerDuration h3 {
+  margin: 1rem 0;
+}
+
+.footerDurations .footerDuration:first-child p {
+  /* width: 40%; */
+}
+
+.footerBottom {
+  background-color: #FF4E17;
+  padding: 3rem 0;
+  width: 100%
+}
+
+.footerBottom p {
+  margin: auto;
+  width: 90%;
+  font-style: normal;
+font-weight: bold;
+font-size: 20px;
+color: #FFFFFF;
+}
+
+/* MOBILE VIEW ========================================================= */
+@media screen and (max-width: 1181px) {
+  .fastLeft h1, .fastRight h1 {
+        font-size: 30px;
+  }
+  .fastLeft p, .fastRight p {
+        font-size: 20px;
+  }
+  .fastButton {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1158px) {
+  #map .cardItems {
+    flex-wrap: wrap;
+  }
+
+  #map .cardItems .cardItem {
+    margin-bottom: 1rem;
+
+  }
+}
+
+@media screen and (max-width: 1117px) {
+  .fastLeft, .fastRight {
+    flex-direction: column;
+  }
+
+  .fastLeft h1, .fastRight h1 {
+    width: 100%
+  }
+}
+
+
+@media screen and (max-width: 956px) {
+  .header {
+    margin: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 753px) {
+  .downloadLeft h2 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  #fast {
+    flex-direction: column;
+  }
+
+  .fastLeft, .fastRight {
+    margin-bottom: 2rem;
+  }
+
+  .foodOrderDownload {
+    flex-direction: column;
+  }
+
+  .downloadLeft p {
+    width: 100%;
+  }
+
+ .foodOrderDownload .apple, .foodOrderDownload .google {
+   margin-bottom: 1rem;
+   width: 100%;
+ }
+}
+
+@media screen and (max-width: 603px) {
+  .downloadRight {
+    display: none;
+  }
 }
