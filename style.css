@@ -31,7 +31,12 @@ body {
   -ms-align-items: center;
   align-items: center;
   height: 80px;
-  margin: 0 5rem;
+  padding: 0 5rem;
+}
+
+.header.isScrolling {
+  background-color: rgba(87, 47, 47, 0.7);
+
 }
 
 .headerLeft {
@@ -45,6 +50,10 @@ body {
   justify-content: center;
   -ms-align-items: center;
   align-items: center;
+}
+
+.burger-menu {
+  display: none
 }
 
 .headerRight nav ul li {
@@ -66,6 +75,12 @@ font-weight: bold;
 font-size: 18px;
 line-height: 27px;
 }
+
+.fas.fa-times.close {
+  display: none;
+}
+
+/* HERO SECTION ==================================================== */
 
 #hero {
   position: relative;
@@ -225,7 +240,6 @@ height: 100%;
   -ms-align-items: center;
   align-items: center;
   flex-direction: column;
-  margin-right: 3rem;
 }
 
 #foodItems .container .foodItem img{
@@ -708,7 +722,7 @@ font-size: 20px;
 color: #FFFFFF;
 }
 
-/* MOBILE VIEW ========================================================= */
+/* RESPONSIVE VIEW ========================================================= */
 @media screen and (max-width: 1181px) {
   .fastLeft h1, .fastRight h1 {
         font-size: 30px;
@@ -742,16 +756,44 @@ color: #FFFFFF;
   }
 }
 
+@media screen and (max-width: 958px) {
+  .headerRight {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
 
-@media screen and (max-width: 956px) {
-  .header {
-    margin: 0 2rem;
+  #hero .heroDetails h1 {
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 753px) {
   .downloadLeft h2 {
     font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 682px) {
+  #hero .search {
+    padding: 2rem;
+  }
+  #hero .search .searchContainer {
+    width: 100%;
+  }
+
+  .footerDurations {
+    flex-direction: column;
+  }
+
+  .footerDurations .footerDuration {
+    margin-top: 2rem;
+  }
+
+  footer {
+    padding: 3rem;
+    height: 100%;
   }
 }
 
@@ -781,5 +823,77 @@ color: #FFFFFF;
 @media screen and (max-width: 603px) {
   .downloadRight {
     display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #popular .container .categoryLists {
+    flex-direction: column;
+    width: 100%
+  }
+
+  #popular .container .categoryLists .categoryList {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .categoryListsDetails {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #map .cardItems .cardItem.white, #map .cardItems .cardItem.black {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+
+  #map .cardItems .cardItem .cardItemLeft h3 {
+    width: 100%;
+  }
+
+  #map .cardItems .cardItem .cardItemLeft p {
+    width: 100%;
+  }
+
+  #hero .search {
+    height: none;
+  }
+
+  #hero .heroDetails h1 {
+    font-size: 40px;
+    width: 90%;
+  }
+
+  #hero .heroDetails .heroButton {
+    font-size: 16px;
+  }
+
+  #hero .search .searchContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #hero .heroDetails h1 {
+    font-size: 35px;
+  }
+
+  #hero .heroDetails p {
+    font-size: 18px
+  }
+
+  #hero .heroDetails .heroButton {
+    font-size: 16px;
+  }
+
+  .searchButton {
+    font-size: 16px;
+  }
+
+  .header {
+    padding: 0 2rem;
   }
 }
