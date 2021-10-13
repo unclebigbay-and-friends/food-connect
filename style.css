@@ -827,6 +827,10 @@ color: #FFFFFF;
 }
 
 @media screen and (max-width: 500px) {
+  #hero .heroDetails h1 {
+    font-size: 30px;
+    width: 85%;
+  }
   #popular .container .categoryLists {
     flex-direction: column;
     width: 100%
