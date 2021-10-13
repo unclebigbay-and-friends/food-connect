@@ -34,6 +34,12 @@ body {
   padding: 0 5rem;
 }
 
+.logoImage {
+  margin-top: 1rem;
+  width: 60px;
+  height: 60px;  cursor: pointer;
+}
+
 .header.isScrolling {
   background-color: rgba(87, 47, 47, 0.7);
 
@@ -84,8 +90,8 @@ line-height: 27px;
 
 #hero {
   position: relative;
-  background: url("./assets/images/rice.jpg") no-repeat center center/cover;
-  width: 100vw;
+  background: url("./assets/images/rice-min.jpg") no-repeat center center/cover;
+  width: 100%;
   height: 100vh;
   z-index: 100;
 }
@@ -218,7 +224,7 @@ outline: none;
   background: white;
   color: black;
   width: 100%;
-height: 100%;
+  padding: 2rem;
 }
 
 #foodItems .container {
@@ -243,7 +249,8 @@ height: 100%;
 }
 
 #foodItems .container .foodItem img{
-  width: 100px;
+  width: 130px;
+height: 140px;
   object-fit: cover;
   margin-bottom: 1rem;
 }
@@ -331,6 +338,7 @@ line-height: 22px;
 }
 
 #map .cardItems .cardItem .cardItemRight .circle.orange {
+  position: relative;
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -338,6 +346,8 @@ line-height: 22px;
 }
 
 #map .cardItems .cardItem .cardItemRight .circle.white {
+  position: relative;
+
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -345,7 +355,12 @@ line-height: 22px;
 }
 
 #map .cardItems .cardItem .cardItemRight .circle img {
-  width: 50%;
+  position: absolute;
+    left: -1.5rem;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
   height: 100%;
   object-fit: cover;
 }
