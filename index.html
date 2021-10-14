@@ -23,7 +23,7 @@
             <li><a href="#">Food Ordering</a></li>
             <li><a href="#">Restaurant Services</a></li>
             <li><a href="#">Pricing</a></li>
-            <button class="headerButton">LOGIN / SIGN UP</button>
+            <a href="#popup1" class="headerButton">LOGIN / SIGN UP</a>
           </ul>
         </nav>
         <button class="hamburger">
@@ -314,6 +314,130 @@
           <img src="./assets/images/fries.png" alt="" />
         </div>
       </section>
+
+      <!-- LOGIN & SIGNUP MODAL -->
+
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <!-- <h2>LOGIN/SIGN UP</h2>
+          <a class="close" href="#">&times;</a> -->
+          <form>
+            <div class="container">
+              <div class="links">
+                <div id="student" class="tab-item active">
+                  <p class="p-click">LOGIN</p>
+                </div>
+                <div id="parent" class="tab-item">
+                  <p class="p-click">CREATE ACCOUNT</p>
+                </div>
+              </div>
+
+              <section class="tab-content">
+                <div id="student-content" class="tab-content-item show">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      placeholder="Enter Email"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Enter Password"
+                    />
+                  </div>
+                  <a href="#" class="forgot">Forgot Password?</a>
+
+                  <button class="loginButton" type="submit" class="submit">
+                    SIGN IN
+                  </button>
+
+                  <br />
+
+                  <p>OR</p>
+
+                  <br />
+
+                  <div class="authLogin facebook">
+                    Login with your Facebook
+                  </div>
+
+                  <div class="authLogin google">
+                    Login with Google
+                  </div>
+                </div>
+
+                <div id="parent-content" class="tab-content-item">
+                  <div class="formTitleAuth">
+                    <h2>Create Account</h2>
+                    <div class="titleAuth">
+                      <img src="./assets/images/facebook.svg" alt="" />
+                      <img src="./assets/images/google.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="fullName"
+                      id="fullName"
+                      placeholder="Full Name"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      placeholder="Phone Number"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Enter Password"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      name="confirmPassword"
+                      id="confirmPassword"
+                      placeholder="Confirm Password"
+                    />
+                  </div>
+                  <button class="loginButton" type="submit" class="submit">
+                    SIGN UP
+                  </button>
+                  <br />
+                  <a
+                    style="
+                      text-align: center;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                    href="#"
+                    >Already have an account?</a
+                  >
+                  <br />
+                </div>
+
+                <a class="close" href="#">Go to homepage</a>
+              </section>
+            </div>
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer>

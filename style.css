@@ -168,6 +168,13 @@ font-style: normal;
 font-weight: bold;
 font-size: 18px;
 line-height: 27px;
+cursor: pointer;
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+justify-content: center;
+-ms-align-items: center;
+align-items: center;
 }
 
 .fas.fa-times.close {
@@ -1015,7 +1022,300 @@ font-size: 20px;
 color: #FFFFFF;
 }
 
+/* LOGIN & SIGNUP MODAL ================================================ */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  color: black;
+  margin: 80px auto;
+  width: 613px;
+background: #FFFFFF;
+border-radius: 10px;
+  position: relative;
+  transition: all 5s ease-in-out;
+  height: 80%;
+  overflow: scroll;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+    top: 86px;
+    right: 14px;
+    -webkit-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.tab-content {
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+justify-content: center;
+-ms-align-items: center;
+align-items: center;
+-webkit-flex-direction: column;
+-ms-flex-direction: column;
+flex-direction: column;
+}
+
+#student-content{
+  display: none;
+  padding: 1.3rem;
+  margin-top: 2rem;
+}
+ #parent-content {
+   display: none;
+   padding: 1.3rem;
+   margin-top: 2rem;
+ }
+
+ .formTitleAuth {
+   display: -webkit-flex;
+   display: -ms-flex;
+   display: flex;
+   justify-content: space-between;
+   -ms-align-items: center;
+   align-items: center;
+   margin-bottom: 1rem;
+ }
+
+ .formTitleAuth img {
+  margin-right: 1rem;
+  cursor: pointer;
+ }
+
+ .show {
+   display: block !important;
+   transition: all 1000 ease-in;
+ }
+
+form .container .links {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  background-color: #EEEAEA;
+
+}
+
+.form-group {
+  margin-bottom: 1rem;
+
+}
+
+.form-group input {
+  width: 422px;
+height: 60px;
+padding: 1rem;
+background: #EEEAEA;
+outline: none;
+apperance: none;
+border: none;
+border-radius: 10px;
+}
+
+.loginButton {
+  background-color: #FF4E17;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  width: 100%;
+  height: 53.19px;
+  border: none;
+  apperance:none;
+  outline: none;
+  color: #fff;
+  border-radius: 10px;
+  font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 108%;
+cursor: pointer;
+}
+
+.forgot {
+  width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#student-content p {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.p-click {
+ cursor: pointer;
+ font-size: 25px;
+}
+
+#student {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  padding: 1.3rem;
+}
+
+#parent {
+  padding: 1.3rem;
+
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+#student.active, #parent.active {
+  background-color: #fff;
+}
+
+.authLogin.facebook {
+width: 100%;
+height: 60px;
+border-radius: 10px;
+cursor: pointer;
+background-color: #3B5598;
+color: #EEEAEA;
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+justify-content: center;
+-ms-align-items: center;
+align-items: center;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 108%;
+text-align: center;
+}
+
+.authLogin.google {
+  margin-top: 1rem;
+width: 100%;
+height: 60px;
+filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.25));
+border-radius: 10px;
+cursor: pointer;
+background-color: #FFFFFF;
+color: #EEEAEA;
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+justify-content: center;
+-ms-align-items: center;
+align-items: center;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 108%;
+text-align: center;
+color: #000000;
+}
+
 /* RESPONSIVE VIEW ========================================================= */
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 703px) {
+  .p-click {
+    cursor: pointer;
+    font-size: 16px;}
+}
+
+@media screen and (max-width: 682px) {
+  .form-group input {
+    width: 100%;
+  }
+
+  .formTitleAuth {
+    flex-direction: column;
+  }
+
+  #parent-content, #student-content {
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .p-click {
+    cursor: pointer;
+    font-size: 14px;}
+}
+
+@media screen and (max-width: 430px) {
+  form .container .links {
+    flex-direction: column;
+  }
+
+  .popup .close {
+    top: 116px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .popup {
+    width: 100%;
+    height: 100%
+  }
+}
+
 @media screen and (max-width: 1181px) {
   .fastLeft h1, .fastRight h1 {
         font-size: 30px;
