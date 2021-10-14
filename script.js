@@ -1,4 +1,9 @@
 const header = document.querySelector(".header");
+const loginButton = document.querySelector("#loginButton");
+const submitForm = document.querySelector("#submitForm");
+const alert = document.querySelector(".alert");
+const closeAlert = document.querySelector(".close-btn");
+const showTheAlert = document.querySelector(".showTheAlert");
 
 window.onload = () => {
   let isScrolling = false;
@@ -14,24 +19,27 @@ window.onload = () => {
   });
 };
 
-// function navLinkCloseMenu() {
-//   document.querySelector(".open").style.display = "block";
-//   document.querySelector(".close").style.display = "none";
-// }
+submitForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-// * function to open the dropdown menu on smaller screens
-// function navLinkOpenMenu() {
-//   document.querySelector(".open").style.display = "none";
-//   document.querySelector(".close").style.display = "block";
-// }
-// const menu = document.querySelector(".burger-menu");
-// menu.addEventListener("click", function () {
-//   if (document.querySelector(".open").style.display === "none") {
-//     navLinkCloseMenu();
-//   } else {
-//     navLinkOpenMenu();
-//   }
-// });
+  console.log("Form Submitted");
+
+  alert.classList.remove("hideAlert");
+  alert.classList.add("showAlert");
+  alert.classList.add("showTheAlert");
+
+  setTimeout(() => {
+    alert.classList.add("hideAlert");
+    alert.classList.remove("showAlert");
+    alert.classList.remove("showTheAlert");
+  }, 3000);
+});
+
+closeAlert.addEventListener("click", () => {
+  alert.classList.add("hideAlert");
+  alert.classList.remove("showAlert");
+  alert.classList.remove("showTheAlert");
+});
 
 const menu_btn = document.querySelector(".hamburger");
 const mobile_menu = document.querySelector(".mobile-nav");
