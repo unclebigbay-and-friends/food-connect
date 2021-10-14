@@ -15,7 +15,89 @@ body {
   line-height: 1.4;
   font-family: "Poppins", sans-serif;
   color: white;
+  overflow-x: hidden;
 }
+
+.hamburger {
+  position: relative ;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  background-color: #FF4E17;
+  padding-top: 120px;
+  transition: 0.4s;
+  z-index: 300;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+
+.mobile-nav a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 12px 16px;
+  background-color: rgba(9, 8, 8, 0.78);
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.mobile-nav a:hover {
+  background-color: #65cf86;
+}
+
+@media (min-width: 959px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
 
 .header {
   position: fixed;
@@ -35,9 +117,15 @@ body {
 }
 
 .logoImage {
-  margin-top: 1rem;
   width: 60px;
-  height: 60px;  cursor: pointer;
+  height: 60px;
+  cursor: pointer;
+}
+
+.logoImage.downloadLogo {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
 }
 
 .header.isScrolling {
@@ -523,17 +611,20 @@ outline: none;
 
 /* FAST --------------------------------------------------------- */
 #fast {
-  background: #333333;
+  padding: 2rem;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   justify-content: space-between;
   -ms-align-items: center;
   align-items: center;
-  padding: 2rem;
+  height: 100%;
+  background: #333333;
+
 }
 
 .fastLeft {
+  background: #333333;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -595,14 +686,191 @@ cursor: pointer;
 }
 
 .fastRight {
+  position: relative;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   justify-content: space-evenly;
+  flex: 1;
+  background: #333333;
+}
+
+.fastRight .circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #FF4E17;
+}
+
+.fastRight .circle.first {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  position: absolute;
+  top: 3rem;
+    right: 0;
+    bottom: 0rem;
+    left: 12rem;
+}
+
+.fastRight .circle.second {
+  position: relative;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  position: absolute;
+  top: 15rem;
+right: 0;
+left: 6rem;
+}
+
+.fastRight .notify {
+  position: absolute;
+  right: 0;
+    top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #233154;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
   -ms-align-items: center;
   align-items: center;
-  flex: 1
+  border-radius: 50%
 }
+
+
+.fastRight .circle.third {
+  position: absolute;
+    top: 27rem;
+    right: 0;
+    bottom: 0rem;
+    left: 13rem;
+}
+
+.fastRight .circle.fourth {
+  position: relative;
+    left: 20rem;
+    color: #233154;
+
+    top: 14rem;
+    width: 60px;
+    height: 60px;
+}
+
+.fastRight .circle.fourth::after {
+  position: absolute;
+  content: "Customer";
+  top: 5rem;
+}
+
+.fastRight .circle.fifth {
+  position: relative;
+    top: 7.89rem;
+    left: 34rem;
+    right: 0;
+    bottom: 0;
+    color: #233154;
+
+    width: 60px;
+    height: 60px;
+
+}
+
+.fastRight .circle.fifth::after {
+  position: absolute;
+  content: "Restaurants";
+  top: 5.5rem;
+}
+
+.fastRight .circle.sixth {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  position: absolute;
+top: 3rem;
+left: 41rem;
+text-align: center;
+}
+
+.fastRight .circle.seventh {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  position: relative;
+    top: -2rem;
+    left: 45rem;
+}
+
+.fastRight .circle.eighth {
+  position: relative;
+    top: -2rem;
+    left: 37rem;
+}
+
+.arrow.left {
+  width: 120px;
+  transform: matrix(-0.53, 0.88, -0.81, -0.55, 0, 0);
+  position: absolute;
+    top: 12rem;
+    right: 0rem;
+    left: 8rem;
+}
+
+.arrow.right {
+  width: 120px;
+  transform: matrix(0.52, 0.88, -0.82, 0.54, 0, 0);
+  position: absolute;
+    top: 24rem;
+    right: 0rem;
+    left: 9rem;
+}
+
+.arrow.arrowRight {
+  transform: matrix(0.52, 0.88, -0.82, 0.53, 0, 0);
+    width: 120px;
+    position: relative;
+    top: -2rem;
+    left: 44rem;
+}
+
+.arrow.arrowLeft {
+  transform: matrix(-0.62, 0.82, -0.75, -0.63, 0, 0);
+    width: 120px;
+    position: relative;
+    top: -0.7rem;
+    left: 41rem;
+}
+
+
+.line {
+  margin-top: 14px;
+  width: 90px;
+  background: #000;
+  height: 3px;
+  float: left;
+}
+.point {
+  clear: left;
+  position: absolute;
+  right: 1rem;
+    top: 5px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid #000;
+  float: right;
+}
+
+/* DOWNLOAD SECTION =============================================================== */
 
 #download {
   display: -webkit-flex;
@@ -639,7 +907,7 @@ width: 68%;
 margin-bottom: 1.5rem;
 }
 
-#download img {
+#download .downloadRight img {
   width: 250px;
   height: 250px;
   object-fit: cover;
@@ -663,6 +931,8 @@ margin-bottom: 1.5rem;
   text-align: center;
   padding: 1rem;
 }
+
+/* FOOTER ===================================================== */
 
 footer {
   background-color: #333333;
@@ -695,12 +965,20 @@ footer h1:after {
 footer h1:before {
   right: 0.5em;
   margin-left: -50%;
+  top: -2rem;
 }
 
 footer h1:after {
   left: 0.5em;
   margin-right: -50%;
+  top: -2rem;
 }
+
+footer .logoImage.footerImage {
+  width: 100px;
+  height: 100px;
+}
+
 
 .footerDurations {
   display: -webkit-flex;
@@ -772,7 +1050,10 @@ color: #FFFFFF;
 }
 
 @media screen and (max-width: 958px) {
-  .headerRight {
+  /* .headerRight {
+    display: none;
+  } */
+  .headerRight nav ul {
     display: none;
   }
   .burger-menu {
