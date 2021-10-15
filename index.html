@@ -13,6 +13,9 @@
   </head>
 
   <body>
+    <div class="preloader">
+      <img class="preloader-icon" src="./assets/images/logo.svg" alt="" />
+    </div>
     <header class="header">
       <div class="headerLeft">
         <img class="logoImage" src="./assets/images/logo.svg" alt="" />
@@ -23,17 +26,20 @@
             <li><a href="#">Food Ordering</a></li>
             <li><a href="#">Restaurant Services</a></li>
             <li><a href="#">Pricing</a></li>
-            <button class="headerButton">LOGIN / SIGN UP</button>
+            <a href="#popup1" class="headerButton">LOGIN / SIGN UP</a>
           </ul>
         </nav>
-      </div>
-      <div class="burger-menu">
-        <div class="burger-menu-toggle">
-          <span><i class="fas fa-bars open"></i></span>
-          <span><i class="fas fa-times close"></i></span>
-        </div>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
       </div>
     </header>
+    <nav class="mobile-nav">
+      <a href="#">Food Ordering</a>
+      <a href="#">Restaurant Services</a>
+      <a href="#">Pricing</a>
+      <a href="#">LOGIN / SIGN UP</a>
+    </nav>
 
     <main>
       <section id="hero">
@@ -205,6 +211,56 @@
         </div>
       </section>
 
+      <!-- <section id="fast">
+        <div class="fastLeft">
+          <div class="fastImage">
+            <img src="./assets/images/hamburger.jpg" alt="" />
+          </div>
+          <div class="fastDetails">
+            <h1>FAST FOOD MEALS</h1>
+            <p>PHENOMENON TASTE</p>
+            <button class="fastButton">
+              ORDER NOW
+            </button>
+          </div>
+        </div>
+        <div class="fastRight">
+          <div class="circle first">Search</div>
+          <div class="arrow left">
+            <div class="line"></div>
+            <div class="point"></div>
+          </div>
+          <div class="circle second">
+            <div class="notify">2</div>
+            Order
+          </div>
+          <div class="arrow right">
+            <div class="line"></div>
+            <div class="point"></div>
+          </div>
+          <div class="circle third"></div>
+          <div class="circle fourth"></div>
+
+          <div class="circle fifth"></div>
+
+          <div class="circle sixth">Receive Order</div>
+          <div class="arrow arrowRight">
+            <div class="line"></div>
+            <div class="point"></div>
+          </div>
+          <div class="circle seventh">
+            <div class="notify">2</div>
+            Cook
+          </div>
+          <div class="arrow arrowLeft">
+            <div class="line"></div>
+            <div class="point"></div>
+          </div>
+          <div class="circle eighth"></div>
+        </div>
+      </section> -->
+
+      ORDING PAGE=========
       <section id="fast">
         <div class="fastLeft">
           <div class="fastImage">
@@ -234,7 +290,12 @@
 
       <section id="download">
         <div class="downloadLeft">
-          <h1>LOGO</h1>
+          <img
+            class="logoImage downloadLogo"
+            src="./assets/images/logo.svg"
+            alt=""
+          />
+
           <h2>Order Food</h2>
           <p>
             The FoodKonnect App makes it simple for anybody to use a mobile
@@ -256,11 +317,151 @@
           <img src="./assets/images/fries.png" alt="" />
         </div>
       </section>
+
+      <!--- LOGIN & SIGNUP MODAL ----------------------------------->
+
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <div class="alert hideAlert">
+            <span class="fas fa-exclamation-circle"></span>
+            <span class="message">Warning: This is a warning alert!</span>
+            <span class="close-btn">
+              <span class="fas fa-times"></span>
+            </span>
+          </div>
+          <form id="submitForm">
+            <div class="container">
+              <div class="links">
+                <div id="login" class="tab-item active">
+                  <p class="p-click">LOGIN</p>
+                </div>
+                <div id="signUp" class="tab-item">
+                  <p class="p-click">CREATE ACCOUNT</p>
+                </div>
+              </div>
+
+              <section class="tab-content">
+                <div id="login-content" class="tab-content-item show">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      placeholder="Enter Email"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Enter Password"
+                    />
+                  </div>
+                  <a href="#" class="forgot">Forgot Password?</a>
+
+                  <button
+                    id="loginButton"
+                    class="loginButton"
+                    type="submit"
+                    class="submit"
+                  >
+                    SIGN IN
+                  </button>
+
+                  <br />
+
+                  <p>OR</p>
+
+                  <br />
+
+                  <div class="authLogin facebook">
+                    Login with your Facebook
+                  </div>
+
+                  <div class="authLogin google">
+                    Login with Google
+                  </div>
+                </div>
+
+                <div id="signUp-content" class="tab-content-item">
+                  <div class="formTitleAuth">
+                    <h2>Create Account</h2>
+                    <div class="titleAuth">
+                      <img src="./assets/images/facebook.svg" alt="" />
+                      <img src="./assets/images/google.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="fullName"
+                      id="fullName"
+                      placeholder="Full Name"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      placeholder="Phone Number"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Enter Password"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      name="confirmPassword"
+                      id="confirmPassword"
+                      placeholder="Confirm Password"
+                    />
+                  </div>
+                  <button class="loginButton" type="submit" class="submit">
+                    SIGN UP
+                  </button>
+                  <br />
+                  <a
+                    style="
+                      text-align: center;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                    href="#"
+                    >Already have an account?</a
+                  >
+                  <br />
+                </div>
+
+                <a class="close" href="#">Go to homepage</a>
+              </section>
+            </div>
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer>
       <div class="footerTop">
-        <h1>LOGO</h1>
+        <h1>
+          <img
+            class="logoImage footerImage"
+            src="./assets/images/logo.svg"
+            alt=""
+          />
+        </h1>
         <div class="footerDurations">
           <div class="footerDuration">
             <h3>ADDRESS</h3>
@@ -287,7 +488,7 @@
     <div class="footerBottom">
       <p>Copyright © 2021 FoodKonnect. All Rights Reserved.</p>
     </div>
-    <script src="./main.js"></script>
+    <script src="./script.js"></script>
     <script
       src="https://kit.fontawesome.com/dfede42a17.js"
       crossorigin="anonymous"
