@@ -6,6 +6,7 @@ const closeAlert = document.querySelector(".close-btn");
 const showTheAlert = document.querySelector(".showTheAlert");
 
 window.onload = () => {
+  document.querySelector(".preloader").style.display = "none";
   let isScrolling = false;
 
   document.addEventListener("scroll", () => {
