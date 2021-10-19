@@ -1157,7 +1157,6 @@ color: #FFFFFF;
   width: 613px;
 background: #FFFFFF;
 border-radius: 10px;
-  position: relative;
   transition: all 5s ease-in-out;
   height: 80%;
   overflow-x: : hidden;
@@ -1170,9 +1169,6 @@ border-radius: 10px;
   font-family: Tahoma, Arial, sans-serif;
 }
 .popup .close {
-  position: absolute;
-    top: 86px;
-    right: 14px;
     -webkit-transition: all 200ms;
     -o-transition: all 200ms;
     transition: all 200ms;
