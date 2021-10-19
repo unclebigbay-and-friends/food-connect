@@ -1176,6 +1176,7 @@ border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
     color: #333;
+    margin-bottom: 1rem;
 }
 .popup .close:hover {
   color: #06D85F;
