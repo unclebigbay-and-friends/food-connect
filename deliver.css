@@ -1,0 +1,307 @@
+.deliverHeader {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  text-align: center;
+}
+.deliverHeader .deliverLogo {
+  width: 100px;
+  height: 100px;
+}
+
+main #deliverTo {
+  background-color: #ff4e17;
+  padding: 2rem;
+  width: 100%;
+}
+
+.goBack {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.deliverLeftArrow {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  color: #ffffff;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.locationInput {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.locationInputContainer {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  width: 350px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 35px;
+  padding: 1rem;
+}
+
+.searchIcon {
+  height: 30px;
+  width: 30px;
+  margin-right: 0.5rem;
+}
+
+.locationInputContainer input {
+  border-radius: 35px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.locationInputContainer input::placeholder {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.deliverItems {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.deliverItem {
+  width: 50%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.deliverItem img {
+  flex: 2;
+}
+
+.deliverItem p {
+  flex: 10;
+}
+
+.deliverIcon {
+  height: 70px;
+  height: 70px;
+}
+
+.savedInput {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.savedInputContainer {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  width: 450px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 35px;
+}
+
+.searchIcon {
+  height: 30px;
+  width: 30px;
+  margin-right: 0.5rem;
+}
+
+.savedInputContainer input {
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  flex: 2;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-right: 2px solid #ccc;
+}
+
+.savedInputContainer input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 72px;
+  text-align: center;
+  color: #000000;
+}
+
+.editButton {
+  cursor: pointer;
+  flex: 1;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  color: black;
+}
+
+.penIcon {
+  width: 30px;
+  height: 30px;
+  margin-left: 0.7rem;
+}
+
+.homeOffice {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.homeOffice .card {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background: #ffffff;
+  border-radius: 30px;
+  color: black;
+  flex-direction: column;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.homeOffice .card p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #000000;
+}
+
+.homeOfficeIcon {
+  color: black;
+  font-size: 50px;
+  height: 50px;
+}
+
+/* MEDIA QUERY ============================================ */
+
+@media only screen and (max-width: 960px) {
+  .deliverItem {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .deliverItem {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  .deliverItems {
+    align-items: flex-start;
+  }
+  .deliverItem {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .deliverItem img {
+    flex: 4;
+  }
+}
+
+@media only screen and (max-width: 488px) {
+  .deliverItem img {
+    flex: 3;
+  }
+  .savedInputContainer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  main #deliverTo {
+    padding: 1rem;
+  }
+  .deliverItems {
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .deliverItem {
+    flex-direction: column;
+  }
+  .deliverItem img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .savedInputContainer {
+    flex-direction: column;
+    height: 100%;
+  }
+  .savedInputContainer input {
+    border-right: none;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 35px;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  .savedInputContainer input::placeholder {
+    font-size: 14px;
+    line-height: 50px;
+  }
+  .homeOffice {
+    flex-direction: column;
+  }
+  .homeOffice .card {
+    margin-bottom: 1rem;
+  }
+}
