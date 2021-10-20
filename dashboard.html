@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="./assets/images/logo.svg" />
 
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./dashboard.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
@@ -24,24 +25,37 @@
       </div>
       <div class="headerRight">
         <nav>
-          <ul>
+          <ul class="headerVisible">
             <li><a href="#">Food Ordering</a></li>
-            <li><a href="#">Restaurant Services</a></li>
-            <li><a href="#">Pricing</a></li>
-            <a href="#auth" class="headerButton">LOGIN / SIGN UP</a>
+            <li><a class="resturantLink" href="#">Restaurant Services</a></li>
+            <li>
+              <a class="cartLink" href="#"
+                ><i class="fas fa-shopping-cart dash-shop"></i>
+                <div class="cartNumber">2</div></a
+              >
+            </li>
+            <div class="user">
+              <img
+                class="defaultPicture"
+                src="./assets/images/userdefault.svg"
+                alt=""
+              />
+              <p class="username"></p>
+              <i class="fas fa-sort-down"></i>
+              <div class="dropDownList">
+                <span><a href="#">Activity</a></span>
+                <span><a href="#">My Account</a></span>
+                <span><a href="#">Offers</a></span>
+                <hr class="spanBottom" />
+                <button class="signOut" type="button" name="button">
+                  Sign Out
+                </button>
+              </div>
+            </div>
           </ul>
         </nav>
-        <button class="hamburger">
-          <div class="bar"></div>
-        </button>
       </div>
     </header>
-    <nav class="mobile-nav">
-      <a href="#">Food Ordering</a>
-      <a href="#">Restaurant Services</a>
-      <a href="#">Pricing</a>
-      <a href="#auth">LOGIN / SIGN UP</a>
-    </nav>
 
     <main>
       <section id="hero">
@@ -49,7 +63,7 @@
           <h1>Free Online Ordering System For Restaurants</h1>
           <p>Get that nutritious meal today</p>
           <button class="heroButton">
-            Get Started
+            Order Now
           </button>
         </div>
 
@@ -68,32 +82,31 @@
         </div>
       </section>
 
-      <section id="foodItems">
-        <div class="container">
-          <div class="foodItem">
-            <img src="./assets/images/combo.jpg" alt="" />
-            <h4>COMBO</h4>
-          </div>
+      <section id="welcome">
+        <h1>
+          Welcome,
+          <h1 class="your-name"></h1>
+        </h1>
+        <p>
+          Welcome to that world,where you that nutritious meal you’ve wanted
+        </p>
+      </section>
 
-          <div class="foodItem">
-            <img src="./assets/images/kidsmenu.png" alt="" />
-            <h4>KIDS MENU</h4>
-          </div>
+      <section id="location">
+        <h2>SELECT LOCATION</h2>
 
-          <div class="foodItem">
-            <img src="./assets/images/pizza.png" alt="" />
-            <h4>PIZZA</h4>
-          </div>
+        <div class="locate">
+          <img
+            class="locateImage"
+            src="./assets/images/userSearch.svg"
+            alt=""
+          />
+          <h3>Locate me</h3>
+        </div>
 
-          <div class="foodItem">
-            <img src="./assets/images/chicken.png" alt="" />
-            <h4>CHICKEN</h4>
-          </div>
-
-          <div class="foodItem">
-            <img src="./assets/images/drinks.png" alt="" />
-            <h4>DRINKS</h4>
-          </div>
+        <div class="locate">
+          <img class="locateImage" src="./assets/images/locate.svg" alt="" />
+          <h3><a href="./deliver.html">Provide delivery location</a></h3>
         </div>
       </section>
 
@@ -213,55 +226,6 @@
         </div>
       </section>
 
-      <!-- <section id="fast">
-        <div class="fastLeft">
-          <div class="fastImage">
-            <img src="./assets/images/hamburger.jpg" alt="" />
-          </div>
-          <div class="fastDetails">
-            <h1>FAST FOOD MEALS</h1>
-            <p>PHENOMENON TASTE</p>
-            <button class="fastButton">
-              ORDER NOW
-            </button>
-          </div>
-        </div>
-        <div class="fastRight">
-          <div class="circle first">Search</div>
-          <div class="arrow left">
-            <div class="line"></div>
-            <div class="point"></div>
-          </div>
-          <div class="circle second">
-            <div class="notify">2</div>
-            Order
-          </div>
-          <div class="arrow right">
-            <div class="line"></div>
-            <div class="point"></div>
-          </div>
-          <div class="circle third"></div>
-          <div class="circle fourth"></div>
-
-          <div class="circle fifth"></div>
-
-          <div class="circle sixth">Receive Order</div>
-          <div class="arrow arrowRight">
-            <div class="line"></div>
-            <div class="point"></div>
-          </div>
-          <div class="circle seventh">
-            <div class="notify">2</div>
-            Cook
-          </div>
-          <div class="arrow arrowLeft">
-            <div class="line"></div>
-            <div class="point"></div>
-          </div>
-          <div class="circle eighth"></div>
-        </div>
-      </section> -->
-
       <section id="fast">
         <div class="fastLeft">
           <div class="fastImage">
@@ -318,149 +282,6 @@
           <img src="./assets/images/fries.png" alt="" />
         </div>
       </section>
-
-      <!--- LOGIN & SIGNUP MODAL ----------------------------------->
-
-      <div id="auth" class="overlay">
-        <div class="popup">
-          <div class="alert hideAlert">
-            <span class="fas fa-exclamation-circle"></span>
-            <span class="message"></span>
-            <span class="close-btn">
-              <span class="fas fa-times"></span>
-            </span>
-          </div>
-          <form id="submitForm">
-            <div class="container">
-              <div class="links">
-                <div id="login" class="tab-item active">
-                  <p class="p-click">LOGIN</p>
-                </div>
-                <div id="signUp" class="tab-item">
-                  <p class="p-click">CREATE ACCOUNT</p>
-                </div>
-              </div>
-
-              <section class="tab-content">
-                <div id="login-content" class="tab-content-item show">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="email"
-                      id="emailLogin"
-                      placeholder="Enter Email"
-                    />
-                  </div>
-
-                  <div class="form-group">
-                    <input
-                      type="password"
-                      name="password"
-                      id="passwordLogin"
-                      placeholder="Enter Password"
-                    />
-                  </div>
-                  <a href="#" class="forgot">Forgot Password?</a>
-
-                  <button
-                    id="loginButton"
-                    class="loginButton"
-                    type="submit"
-                    id="loginSubmit"
-                  >
-                    SIGN IN
-                  </button>
-
-                  <br />
-
-                  <p>OR</p>
-
-                  <br />
-
-                  <div class="authLogin facebook">
-                    Login with your Facebook
-                  </div>
-
-                  <div class="authLogin google">
-                    Login with Google
-                  </div>
-                </div>
-
-                <div id="signUp-content" class="tab-content-item">
-                  <div class="formTitleAuth">
-                    <h2>Create Account</h2>
-                    <div class="titleAuth">
-                      <img src="./assets/images/facebook.svg" alt="" />
-                      <img src="./assets/images/google.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="fullName"
-                      id="fullName"
-                      placeholder="Full Name"
-                    />
-                  </div>
-
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="phone"
-                      id="phone"
-                      placeholder="Phone Number"
-                    />
-                  </div>
-
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="email"
-                      id="emailCreate"
-                      placeholder="Enter Email"
-                    />
-                  </div>
-
-                  <div class="form-group">
-                    <input
-                      type="password"
-                      name="password"
-                      id="passwordCreate"
-                      placeholder="Enter Password"
-                    />
-                  </div>
-
-                  <div class="form-group">
-                    <input
-                      type="password"
-                      name="confirmPassword"
-                      id="confirmPassword"
-                      placeholder="Confirm Password"
-                    />
-                  </div>
-                  <button class="loginButton" type="submit" class="submit">
-                    SIGN UP
-                  </button>
-                  <br />
-                  <a
-                    style="
-                      text-align: center;
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
-                    "
-                    href="#"
-                    >Already have an account?</a
-                  >
-                  <br />
-                </div>
-
-                <a class="close" href="#">Go to homepage</a>
-              </section>
-            </div>
-          </form>
-        </div>
-      </div>
     </main>
 
     <footer>
@@ -499,6 +320,7 @@
       <p>Copyright © 2021 FoodKonnect. All Rights Reserved.</p>
     </div>
     <script src="./script.js"></script>
+    <script src="./dashboard.js"></script>
     <script
       src="https://kit.fontawesome.com/dfede42a17.js"
       crossorigin="anonymous"
