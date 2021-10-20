@@ -1,0 +1,274 @@
+.headerRight .headerVisible {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.cartLink {
+  position: relative;
+}
+
+.dash-shop {
+  color: #ff4e17;
+  font-size: 20px;
+}
+
+.cartNumber {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  bottom: -12px;
+  right: -1rem;
+  font-size: 8px;
+}
+
+.user {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.defaultPicture {
+  margin: 0 1rem;
+  width: 35px;
+  height: 35px;
+}
+
+.username {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-right: 0.5rem;
+}
+
+.dropDownList {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: black;
+  background: #ffffff;
+  right: 3rem;
+  bottom: -188px;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 17%;
+}
+
+.user:hover .dropDownList {
+  opacity: 1;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.dropDownList span {
+  margin-bottom: 1rem;
+}
+
+.spanBottom {
+  background: none;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ff4e17 !important;
+}
+
+.signOut {
+  border: none;
+  background-color: #ff4e17;
+  color: white;
+  width: 100%;
+  height: 35px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+/* WELCOME ================================== */
+#welcome {
+  padding: 2rem;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#welcome h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 108px;
+  text-align: center;
+  color: #ff4e17;
+}
+
+#welcome p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+  margin-top: 0.5rem;
+}
+
+/* LOCATION ============================================== */
+#location {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+#location h2 {
+  margin-bottom: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.locate {
+  width: 459px;
+  height: 68px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.locate h3 {
+  color: #ff4e17;
+  text-align: center;
+  width: 100%;
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 840px) {
+  .dropDownList {
+    bottom: -184px;
+    width: 22%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .dropDownList {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .headerRight .headerVisible li:first-child {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .header {
+    padding: 0 3rem;
+  }
+  .headerRight .headerVisible li .resturantLink {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .locate {
+    width: 100%;
+  }
+  #welcome h1 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .dropDownList {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .header {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  #location h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .dropDownList {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  #location h2 {
+    font-size: 20px;
+  }
+  .header {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 245px) {
+  .locate {
+    padding: 1rem;
+    height: 100%;
+  }
+  .locate h3 {
+    font-size: 12px;
+  }
+}
